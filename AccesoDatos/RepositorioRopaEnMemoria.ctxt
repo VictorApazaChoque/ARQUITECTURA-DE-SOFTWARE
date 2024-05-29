@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RepositorioRopaEnMemoria
+comment1.params=ropa
+comment1.target=void\ guardar(Ropa)
+comment2.params=
+comment2.target=java.util.List\ encontrarTodas()
+numComments=3

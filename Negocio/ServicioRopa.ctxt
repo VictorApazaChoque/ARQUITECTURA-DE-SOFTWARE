@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ServicioRopa
+comment1.params=repositorio
+comment1.target=ServicioRopa(AccesoDatos.RepositorioRopa)
+comment2.params=ropa
+comment2.target=void\ agregarRopa(AccesoDatos.Ropa)
+comment3.params=
+comment3.target=java.util.List\ obtenerTodaLaRopa()
+numComments=4
