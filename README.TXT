@@ -1,30 +1,53 @@
+Funcionamiento.
+a) Clonar el Repositorio desde GitHub
+- Abrir la Terminal o S铆mbolo del Sistema:
+
+- En Windows, puedes usar Git Bash o el S铆mbolo del Sistema.
+- En macOS y Linux, puedes usar la Terminal.
+- Ejecutar el comando git init para iniciar git en la terminal
+- Ejecuta el comando git clone https://github.com/VictorApazaChoque/ARQUITECTURA-DE-SOFTWARE.git para clonar el proyecto 
+- Una vez clonado el proyecto, abrir Bluej y acceder a la carpeta del proyecto.
+
+b) Abrir el Proyecto en BlueJ
+
+- Compilar Todas las Clases:
+  Haz clic en Compile o en Compile All para compilar todas las clases del proyecto. Esto asegurar谩 que no haya errores de compilaci贸n.
+
+- Ejecutar la Clase Principal:
+
+- Encuentra la clase Main en el paquete presentacion.
+  Haz clic derecho sobre la clase Main y selecciona void main(String[] args) para ejecutar el m茅todo main.
+
+
+* Aplicacion de lo requerido del proyecto
+
 Arquitectura de 3 Capas
-1. Capa de Presentaci髇:
-? Prop髎ito: Interact鷄 con el usuario final, mostrando informaci髇 y
+1. Capa de Presentaci贸n:
+? Prop贸sito: Interact煤a con el usuario final, mostrando informaci贸n y
 recibiendo entradas.
-? Ejemplo: Interfaz gr醘ica o consola que muestra la lista de ropa
+? Ejemplo: Interfaz gr谩fica o consola que muestra la lista de ropa
 disponible.
 
-2. Capa de L骻ica de Negocio:
-? Prop髎ito: Contiene las reglas y l骻ica de negocio, procesando datos y
+2. Capa de L贸gica de Negocio:
+? Prop贸sito: Contiene las reglas y l贸gica de negocio, procesando datos y
 realizando operaciones necesarias.
-? Ejemplo: Gesti髇 de operaciones como agregar productos, calcular
+? Ejemplo: Gesti贸n de operaciones como agregar productos, calcular
 precios y validar stock.
 3. Capa de Acceso a Datos:
-? Prop髎ito: Maneja la persistencia y recuperaci髇 de datos desde una base
+? Prop贸sito: Maneja la persistencia y recuperaci贸n de datos desde una base
 de datos u otra fuente de almacenamiento.
 
-? Ejemplo: Interacci髇 con una base de datos para almacenar informaci髇
+? Ejemplo: Interacci贸n con una base de datos para almacenar informaci贸n
 de productos y registrar compras.
 
 Principios SOLID
 1. SRP (Single Responsibility Principle):
-? Principio: Una clase debe tener una 鷑ica responsabilidad.
+? Principio: Una clase debe tener una 煤nica responsabilidad.
 ? Ejemplo: Clase Ropa se encarga solo de atributos de ropa; ServicioRopa
-maneja la l骻ica de negocio.
+maneja la l贸gica de negocio.
 2. OCP (Open/Closed Principle):
-? Principio: Las clases deben estar abiertas para extensi髇 pero cerradas
-para modificaci髇.
+? Principio: Las clases deben estar abiertas para extensi贸n pero cerradas
+para modificaci贸n.
 ? Ejemplo: Nuevas implementaciones de RepositorioRopa sin modificar
 clases existentes.
 
@@ -32,30 +55,30 @@ clases existentes.
 ? Principio: Los objetos de una clase base deben ser reemplazables por
 objetos de una clase derivada.
 ? Ejemplo: RepositorioRopaEnMemoria puede reemplazar cualquier
-implementaci髇 de RepositorioRopa.
+implementaci贸n de RepositorioRopa.
 4. ISP (Interface Segregation Principle):
 ? Principio: Los clientes no deben depender de interfaces que no utilizan.
-? Ejemplo: RepositorioRopa define solo m閠odos necesarios para manejar
+? Ejemplo: RepositorioRopa define solo m茅todos necesarios para manejar
 operaciones de ropa.
 
 5. DIP (Dependency Inversion Principle):
 ? Principio: Las clases deben depender de abstracciones y no de
 implementaciones concretas.
 ? Ejemplo: ServicioRopa depende de la interfaz RepositorioRopa, no de
-una implementaci髇 concreta.
+una implementaci贸n concreta.
 
-Patrones de Dise駉
-1. Patr髇 Creacional: Factory Method:
-? Prop髎ito: Define una interfaz para crear objetos y permite que las
+Patrones de Dise帽o
+1. Patr贸n Creacional: Factory Method:
+? Prop贸sito: Define una interfaz para crear objetos y permite que las
 subclases alteren el tipo de objeto creado.
 ? Ejemplo: FabricaRopa para crear instancias de Ropa.
-2. Patr髇 Estructural: Adapter:
-? Prop髎ito: Permite que dos interfaces incompatibles trabajen juntas.
+2. Patr贸n Estructural: Adapter:
+? Prop贸sito: Permite que dos interfaces incompatibles trabajen juntas.
 
 ? Ejemplo: Adaptar diferentes fuentes de datos a la interfaz
 RepositorioRopa.
-3. Patr髇 Comportamiento: Strategy:
-? Prop髎ito: Define una familia de algoritmos, los encapsula y los hace
+3. Patr贸n Comportamiento: Strategy:
+? Prop贸sito: Define una familia de algoritmos, los encapsula y los hace
 intercambiables.
-? Ejemplo: Estrategias de c醠culo de precios con descuentos o filtrado de
+? Ejemplo: Estrategias de c谩lculo de precios con descuentos o filtrado de
 productos.
